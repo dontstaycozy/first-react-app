@@ -12,7 +12,11 @@ const StudentInfo: React.FC<StudentInfoProps> = ({ onSubmit }) => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+
+    alert(`Hello, ${name}!`);
+
     onSubmit({ name, course, age: Number(age) });
+
     setName("");
     setCourse("");
     setAge("");

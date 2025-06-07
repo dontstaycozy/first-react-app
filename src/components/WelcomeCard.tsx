@@ -13,7 +13,7 @@ const WelcomeCard: React.FC<WelcomeCardProps> = ({ student }) => {
   if (!student) {
     return (
       <div className="card">
-        <h1>Welcome, Friend!!</h1>
+        <h1>Welcome, friend!!</h1>
         <p>Fill out the form below to get started.</p>
       </div>
     );
