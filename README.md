@@ -17,8 +17,3 @@ A simple form that captures student name and course, and shows an alert on submi
 1. Clone the repo
 2. Run `npm install`
 3. Run `npm run dev`
-
-## Screenshots
-*(Include your screenshots here once you test the app)*
-
----
