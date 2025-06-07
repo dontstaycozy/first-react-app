@@ -3,6 +3,7 @@ import WelcomeCard from "./components/WelcomeCard";
 import Counter from "./components/Counter";
 import StudentInfo from "./components/StudentInfo";
 import "./App.css";
+import "./jsFundamentals";
 
 type Student = {
   name: string;
