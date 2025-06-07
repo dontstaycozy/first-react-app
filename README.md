@@ -11,7 +11,7 @@ Displays a greeting message using a `name` passed as a prop.
 Interactive counter that uses React's `useState` to increment, decrement, and reset the value.
 
 ### 3. StudentInfo
-A simple form that captures student name and course, and shows an alert on submit.
+A simple form that captures student name, age, and course, and shows an alert on submit.
 
 ## How to Run
 1. Clone the repo
