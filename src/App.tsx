@@ -4,13 +4,19 @@ import Counter from "./components/Counter";
 import StudentInfo from "./components/StudentInfo";
 import "./App.css";
 
+type Student = {
+  name: string;
+  course: string;
+  age: number;
+};
+
 function App() {
-  const [username, setUsername] = useState("");
+  const [student, setStudent] = useState<Student | null>(null);
 
   return (
     <div className="app">
-      <WelcomeCard name={username} />
-      <StudentInfo onSubmit={setUsername} />
+      <WelcomeCard student={student} />
+      <StudentInfo onSubmit={setStudent} />
       <Counter />
     </div>
   );

@@ -6,11 +6,11 @@ const Counter: React.FC = () => {
 
   return (
     <div className="counter">
-      <h2>Kirby Counter</h2>
+      <h2>Counter</h2>
       <p>{count}</p>
-      <button onClick={() => setCount(count + 1)}>Increase</button>
-      <button onClick={() => setCount(count - 1)}>Decrease</button>
+      <button onClick={() => setCount(count - 1)}>-</button>
       <button onClick={() => setCount(0)}>Reset</button>
+      <button onClick={() => setCount(count + 1)}>+</button>
     </div>
   );
 };
