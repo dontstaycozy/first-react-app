@@ -1,6 +1,6 @@
-# React Basics Practice
+# React Basics Practice and JavaScript Fundamentals
 
-This project contains basic React components built to demonstrate understanding of props, state, and event handling.
+This project contains basic React components built to demonstrate understanding of props, state, and event handling. When you inspect the page, it also shows the Javascript Fundamentals section.
 
 ## Components
 
