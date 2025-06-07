@@ -5,7 +5,7 @@ This project contains basic React components built to demonstrate understanding 
 ## Components
 
 ### 1. WelcomeCard
-Displays a greeting message using a `name` passed as a prop.
+Displays a greeting message using a `name` from student passed as a prop.
 
 ### 2. Counter
 Interactive counter that uses React's `useState` to increment, decrement, and reset the value.
