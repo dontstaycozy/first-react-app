@@ -1,15 +1,67 @@
-.App {
+body {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  background: linear-gradient(135deg, #ffe6f0, #d4a5ff);
+  margin: 0;
+  padding: 0;
+  color: #4c006b;
   text-align: center;
-  padding: 20px;
-  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.app {
+  padding: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff0fb;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card,
+.counter,
+.form {
+  background-color: #ffccf9;
+  border: 3px solid #ff8fdc;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  border-radius: 15px;
+  width: 100%;
 }
 
 button {
-  margin: 5px;
-  padding: 5px 10px;
+  background-color: #ff8fdc;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-input {
-  margin: 5px;
-  padding: 5px;
+button:hover {
+  background-color: #f16fb1;
+}
+
+input[type="text"] {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 2px solid #ff8fdc;
+  margin: 0.5rem 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
 }

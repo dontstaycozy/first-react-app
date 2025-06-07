@@ -1,14 +1,17 @@
+import React from "react";
+import "../App.css";
+
 type WelcomeCardProps = {
   name: string;
 };
 
-function WelcomeCard({ name }: WelcomeCardProps) {
+const WelcomeCard: React.FC<WelcomeCardProps> = ({ name }) => {
   return (
-    <div className="welcome-card">
-      <h1>Welcome, {name}!</h1>
-      <p>We’re glad to have you here! uhhh idk what im doing so please bear with me T-T.</p>
+    <div className="card">
+      <h1>Welcome {name || "Friend"}!!</h1>
+      <p>i have no idea what im doing</p>
     </div>
   );
-}
+};
 
 export default WelcomeCard;

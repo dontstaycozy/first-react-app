@@ -1,32 +1,33 @@
-import { useState } from "react";
+import React, { useState } from "react";
+import "../App.css";
 
-function StudentInfo() {
+type StudentInfoProps = {
+  onSubmit: (name: string) => void;
+};
+
+const StudentInfo: React.FC<StudentInfoProps> = ({ onSubmit }) => {
   const [name, setName] = useState("");
-  const [course, setCourse] = useState("");
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    alert(`Student: ${name}, Course: ${course}`);
+    onSubmit(name);
+    setName("");
   };
 
   return (
-    <form onSubmit={handleSubmit} className="student-info-form">
-      <h2>enter a name if u want a shout out lmao</h2>
+    <div>
+    <form className="form" onSubmit={handleSubmit}>
+      <label htmlFor="studentName">Enter your name:</label>
       <input
+        id="studentName"
         type="text"
-        placeholder="Enter name"
         value={name}
         onChange={(e) => setName(e.target.value)}
       />
-      <input
-        type="text"
-        placeholder="Enter course"
-        value={course}
-        onChange={(e) => setCourse(e.target.value)}
-      />
       <button type="submit">Submit</button>
     </form>
+    </div>
   );
-}
+};
 
 export default StudentInfo;
